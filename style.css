@@ -66,6 +66,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     margin: 16px 271px;
+    align-items: center;
 }
 
 header nav div {
@@ -778,9 +779,3 @@ table.tablaazul tr:nth-child(even) {
     }
 }
 
-@media (max-width:1022px){
-    #slick-slide-control{
-        display:none;
-    }
-
-}
