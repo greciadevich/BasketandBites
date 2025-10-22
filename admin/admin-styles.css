@@ -1,0 +1,189 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+form {
+    /* max-width: 500px; */
+}
+
+main {
+    margin: 0 10%;
+}
+
+/* General Button Styles */
+button,
+a.boton,
+input[type="submit"] {
+    background-color: #840407;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a.boton {
+    margin-bottom: 10px;
+    background-color: #840407;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+a.boton:hover {
+    background-color: #600305;
+    text-decoration: none;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1186f7;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type="submit"] {
+    background-color: #840407;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #600305;
+}
+
+/* Menu Styles */
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #840407;
+    display: inline-flex;
+}
+
+ul.menu>li {
+    position: relative;
+}
+
+ul.menu>li>a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+ul.menu>li>a:hover {
+    background-color: #600305;
+}
+
+ul.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #840407;
+    min-width: 200px;
+    z-index: 1;
+    padding-left: 0;
+}
+
+ul.menu li:hover>ul {
+    display: block;
+}
+
+ul.menu li ul li {
+    display: block;
+}
+
+ul.menu li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+ul.menu li ul li a:hover {
+    background-color: #600305;
+}
+
+/* Ensure proper positioning for deeper nested lists */
+ul.menu li ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* Estilos del alert box */
+.alert-box {
+    color: #840407;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+    border: 2px solid #840407;
+}
+
+.alert-box a {
+    color: #840407;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.alert-box a:hover {
+    color: #ffd700;
+}
