@@ -59,7 +59,7 @@ h2 {
 /* HEADER */
 
 #logo {
-   width: 190px;
+    width: 190px;
 }
 
 header nav {
@@ -80,7 +80,7 @@ header nav div {
 }
 
 .header-container input[type="search"] {
-    width: 510px;
+    width: 417px;
     height: 47px;
     font-size: 16px;
     padding: 5px 10px;
@@ -150,8 +150,6 @@ a:hover:not(#cart) {
     background-color: #7B6447;
 }
 
-
-
 /* section compra online */
 
 .compra-online {
@@ -219,6 +217,9 @@ a:hover:not(#cart) {
 
 .index.productos .producto {
     flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .precio {
@@ -583,20 +584,27 @@ main .paginador a:hover:not(.active) {
     flex: 1;
     background-color: #e8e8e8;
     margin-right: 5px;
+    width: 50%;
 }
 
 #tercera-seccion {
     flex: 1;
     background-color: #e8e8e8;
     margin-left: 5px;
+    width: 50%;
 }
 
 #primera-seccion {
     display: flex;
+    align-items: flex-start;
 }
 
 #basketandbites .sidebar-2 {
-    width: 700px;
+    width: 100%;
+}
+
+#tercera-seccion iframe {
+    max-width: 100%;
 }
 
 /*ACERCADENOSOTROS*/
@@ -755,6 +763,12 @@ table.tablaazul tr:nth-child(even) {
     margin-right: 10px;
 }
 
+@media (max-width: 1545px){
+    header nav{
+        margin: 16px 8vw;
+    }
+}
+
 @media (max-width: 1200px) {
     #logo {
         height: 14vw;
@@ -762,20 +776,66 @@ table.tablaazul tr:nth-child(even) {
         max-width: unset;
     }
 
-    header nav{
-        margin:16px;
+    header nav {
+        margin: 16px;
     }
 
-    .header-container input[type="search"]{
+    .header-container input[type="search"] {
         width: 28vw;
     }
 
-    .folleto-imagen{
-        width:100%;
+    .folleto-imagen {
+        width: 100%;
     }
 
-    .inicio{
-        margin:11px;
+    .inicio {
+        margin: 11px;
+    }
+
+    .col-tienda-derecha .producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
     }
 }
 
+@media (max-width:1024px) {
+    .col-tienda-derecha .producto {
+        flex: 0 1 calc(50% - 5px);
+    }
+}
+
+@media (max-width:960px) {
+    #primera-seccion {
+        flex-direction: column;
+    }
+
+    #primera-seccion img {
+        align-self: center;
+        margin: 0;
+    }
+}
+
+@media (max-width:730px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .header-container form {
+        margin: 17px;
+    }
+}
+
+@media (max-width:600px) {
+    .lista-enlaces {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+}

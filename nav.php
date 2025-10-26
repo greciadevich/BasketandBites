@@ -4,6 +4,7 @@
         <input type="search" name="q" placeholder="Escribe el nombre del producto o receta que buscas...">
         <input type="submit" value="Buscar">
     </form>
+    <div id="nav-bottom">
     <a href="./micuenta.php" id="boton-cuenta"><img src="./pictures/user.png" alt="micuenta"><?php if (isset($_SESSION['usuarioId']) && $_SESSION['usuarioId']) print 'Hola ' . $_SESSION['usuarioNombre'] . '<br/>' ?>Mi cuenta</a>
     <div>
         <?php
@@ -15,6 +16,7 @@
         <!-- <span class="texto">Tu carrito: </span>
         <span class="monto">0,00</span>
         <span class="euro">€</span> -->
+    </div>
     </div>
 </nav>
 <?php
