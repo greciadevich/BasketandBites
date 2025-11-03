@@ -871,7 +871,22 @@ table.tablaazul tr:nth-child(even) {
         width: 100%;
         box-sizing: border-box;
     }
+
+    .recipe-container{
+        flex-direction: column;
+    }
+
+    .row-recetas{
+        width:100%;
+        padding: 0;
+    }
+    .sidebar{
+        width:100%
+    }
+
 }
+
+
 
 @media (max-width:730px) {
     nav {
