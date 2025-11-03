@@ -763,8 +763,8 @@ table.tablaazul tr:nth-child(even) {
     margin-right: 10px;
 }
 
-@media (max-width: 1545px){
-    header nav{
+@media (max-width: 1545px) {
+    header nav {
         margin: 16px 8vw;
     }
 }
@@ -813,6 +813,63 @@ table.tablaazul tr:nth-child(even) {
     #primera-seccion img {
         align-self: center;
         margin: 0;
+    }
+
+    .tienda-container {
+        flex-direction: column;
+    }
+
+    .categorias ul {
+        display: inline-flex;
+        margin: 0;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .col-tienda-izquierda {
+        width: 100%;
+    }
+
+    .categorias .menu-padre {
+        background-color: #840407;
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid #840407;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        width: calc(100% / 3 - 6px);
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .col-tienda-derecha {
+        width: 100%;
+        margin: 100px 0 0 0;
+    }
+
+    .categorias .menu-hijo {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        flex-direction: column;
+        z-index: 99;
+        background: #840407;
+        text-align: left;
+        padding: 0;
+        border: 0;
+    }
+
+    .categorias .menu-hijo li {
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
